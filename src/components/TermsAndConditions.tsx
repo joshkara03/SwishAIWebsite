@@ -30,7 +30,6 @@ export default function TermsAndConditions() {
           </nav>
         </div>
       </header>
-
       {/* Terms and Conditions Content */}
       <div className="max-w-4xl mx-auto py-16 px-6">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
@@ -103,7 +102,7 @@ export default function TermsAndConditions() {
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              5. Payments (If Applicable)
+              5. Payments
             </h2>
             <p>
               If you sign up for a paid plan, you authorize us to charge your
@@ -117,7 +116,7 @@ export default function TermsAndConditions() {
               6. Privacy
             </h2>
             <p>
-              Your data is handled in accordance with our [Privacy Policy]. We
+              Your data is handled in accordance with our Privacy Policy. We
               take your privacy seriously and strive to keep your information
               secure.
             </p>
@@ -129,8 +128,7 @@ export default function TermsAndConditions() {
             </h2>
             <p>
               Swish AI and all related branding, features, and code are owned by
-              [Your Company Name]. Don't copy, resell, or reverse-engineer the
-              app.
+              Swish AI. Don't copy, resell, or reverse-engineer the app.
             </p>
           </section>
 
@@ -150,8 +148,8 @@ export default function TermsAndConditions() {
               9. Governing Law
             </h2>
             <p>
-              These Terms are governed by the laws of [Province/State, Country].
-              Disputes will be handled in the courts of [Jurisdiction].
+              These Terms are governed by the laws of Alberta, Canada. Disputes
+              will be handled in the courts of Alberta.
             </p>
           </section>
 
@@ -171,7 +169,6 @@ export default function TermsAndConditions() {
           </section>
         </div>
       </div>
-
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
