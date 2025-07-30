@@ -260,7 +260,7 @@ export default function Home() {
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm">
-                    Carlos, Weekend Baller
+                    Jane, D3 Hooper
                   </h4>
                 </div>
               </div>
