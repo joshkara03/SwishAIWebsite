@@ -113,11 +113,11 @@ const HeroSection = ({
 
         {/* Right side content */}
         <div className="lg:w-1/2 relative flex justify-center">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-r from-yellow-200 to-yellow-100 opacity-70 blur-xl"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600 opacity-60 blur-2xl"></div>
           <img
-            src="https://i.imgur.com/g4Kougx.jpeg"
+            src="/images/Hero2.png"
             alt="Mobile app preview"
-            className="relative z-10 max-w-full h-auto"
+            className="relative z-10 h-auto w-[60%]"
           />
         </div>
       </div>
