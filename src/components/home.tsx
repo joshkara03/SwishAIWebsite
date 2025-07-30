@@ -394,7 +394,7 @@ export default function Home() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="https://www.swishai.app/terms-and-conditions"
+                    href="/terms-and-conditions"
                     className="text-gray-400 hover:text-white text-sm transition-colors"
                   >
                     Terms & Conditions
@@ -402,7 +402,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="https://www.swishai.app/privacy-policy"
+                    href="/privacy-policy"
                     className="text-gray-400 hover:text-white text-sm transition-colors"
                   >
                     Privacy Policy
