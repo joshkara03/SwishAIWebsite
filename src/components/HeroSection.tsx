@@ -9,9 +9,9 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  title = "Experience Effortless Banking Every Day.",
-  subtitle = "Manage your finances, track your spending, and achieve your goals — all from the palm of your hand.",
-  badgeText = "Spring Release",
+  title = "AI Basketball Coach. In your Pocket.",
+  subtitle = "Record your sessions and get personalized feedback on your shooting form, footwork, and mechanics. It's like having a pro coach in your pocket.",
+  badgeText = "Coming August 2025",
 }: HeroSectionProps) => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -106,7 +106,7 @@ const HeroSection = ({
               ))}
             </div>
             <span className="text-sm text-muted-foreground">
-              More than 79 satisfied hoopers
+              Trusted by 79+ hooper (from D1 to weekend ballers)
             </span>
           </div>
         </div>

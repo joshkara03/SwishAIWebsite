@@ -23,37 +23,46 @@ export default function Home() {
           </div>
           <nav className="ml-10 hidden md:flex space-x-6">
             <a
-              href="#features"
+              href="/#features"
               className="hover:text-gray-300 cursor-pointer"
               onClick={(e) => {
                 e.preventDefault();
-                document
-                  .getElementById("features")
-                  ?.scrollIntoView({ behavior: "smooth" });
+                const element = document.getElementById("features");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  window.location.href = "/#features";
+                }
               }}
             >
               Features
             </a>
             <a
-              href="#testimonials"
+              href="/#testimonials"
               className="hover:text-gray-300 cursor-pointer"
               onClick={(e) => {
                 e.preventDefault();
-                document
-                  .getElementById("testimonials")
-                  ?.scrollIntoView({ behavior: "smooth" });
+                const element = document.getElementById("testimonials");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  window.location.href = "/#testimonials";
+                }
               }}
             >
               Testimonials
             </a>
             <a
-              href="#faqs"
+              href="/#faqs"
               className="hover:text-gray-300 cursor-pointer"
               onClick={(e) => {
                 e.preventDefault();
-                document
-                  .getElementById("faqs")
-                  ?.scrollIntoView({ behavior: "smooth" });
+                const element = document.getElementById("faqs");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  window.location.href = "/#faqs";
+                }
               }}
             >
               FAQs
@@ -69,11 +78,11 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Explore our powerful features
+              Analyze Game Film. Without the Guesswork.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Discover how our comprehensive suite of tools and capabilities can
-              transform your operations.
+              SwishAI breaks down your game tape in minutes. No more watching
+              every frame trying to find what went wrong.
             </p>
           </div>
 
@@ -98,12 +107,13 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">
-                    Seamless Integration
+                    🧠 AI-Powered Feedback
                   </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
-                  Enjoy peace of mind with advanced security features, including
-                  encryption and two-factor authentication.
+                  We detect key plays and motion patterns, then provide targeted
+                  coaching insights—shot form, release timing, footwork,
+                  balance.
                 </p>
               </div>
 
@@ -124,12 +134,12 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">
-                    Customizable Workflows
+                    🏗️ Built for Growth
                   </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
-                  Tailor the platform to fit your unique processes and
-                  workflows, ensuring it meets your specific business needs.
+                  Whether you’re training for your school team, AAU, or the next
+                  level—SwishAI adapts to your game.
                 </p>
               </div>
             </div>
@@ -162,12 +172,12 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">
-                    24/7 Customer Support
+                    📱 Upload and Go
                   </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
-                  Rely on our dedicated support team available around the clock
-                  to assist you with any questions or issues.
+                  Record on your phone, upload directly, and get analysis within
+                  minutes. No fancy equipment needed.
                 </p>
               </div>
 
@@ -188,12 +198,13 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">
-                    Scalable Solutions
+                    🎯 Know What to Work On
                   </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
-                  Easily scale your operations as your business grows with our
-                  flexible platform designed for expansion.
+                  Instead of guessing, you’ll walk away from each session
+                  knowing your biggest improvement areas—backed by data and
+                  visuals
                 </p>
               </div>
             </div>
@@ -219,9 +230,8 @@ export default function Home() {
             {/* Testimonial 1 */}
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 mb-6 text-sm leading-relaxed">
-                &quot;Their expertise and support have been invaluable to our
-                team. They consistently deliver results that exceed
-                expectations.&quot;
+                “SwishAI caught flaws in my shot I didn’t even know I had. After
+                a week, my release was smoother and more consistent.”
               </p>
               <div className="flex items-center">
                 <img
@@ -231,40 +241,16 @@ export default function Home() {
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm">
-                    Sarah Johnson
+                    Jordan, High School PG
                   </h4>
-                  <p className="text-gray-500 text-xs">IT Director</p>
                 </div>
               </div>
             </div>
-
             {/* Testimonial 2 */}
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-6 text-sm leading-relaxed">
-                &quot;Their professionalism and attention to detail set them
-                apart. We've experienced seamless collaboration and outstanding
-                outcomes.&quot;
-              </p>
-              <div className="flex items-center">
-                <img
-                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=laura"
-                  alt="Laura Martinez"
-                  className="w-10 h-10 rounded-full mr-3"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900 text-sm">
-                    Laura Martinez
-                  </h4>
-                  <p className="text-gray-500 text-xs">HR Director</p>
-                </div>
-              </div>
-            </div>
-
             {/* Testimonial 3 */}
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 mb-6 text-sm leading-relaxed">
-                &quot;Their support has been crucial to our success. They've
-                helped us achieve milestones we once thought impossible.&quot;
+                “Great supplement for when I can't do one-on-one coaching”
               </p>
               <div className="flex items-center">
                 <img
@@ -274,19 +260,16 @@ export default function Home() {
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm">
-                    Emily Davis
+                    Carlos, Weekend Baller
                   </h4>
-                  <p className="text-gray-500 text-xs">Operations Manager</p>
                 </div>
               </div>
             </div>
-
             {/* Testimonial 4 */}
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 mb-6 text-sm leading-relaxed">
-                &quot;I highly recommend their dedication to customer service
-                and expertise in digital marketing has surpassed our
-                expectations.&quot;
+                "Man - so sick. Not always accurate but definitely much better
+                than asking reddit for feedback lol"
               </p>
               <div className="flex items-center">
                 <img
@@ -296,55 +279,13 @@ export default function Home() {
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm">
-                    Michael Chen
+                    Carlos, Weekend Baller
                   </h4>
-                  <p className="text-gray-500 text-xs">Marketing Director</p>
                 </div>
               </div>
             </div>
-
             {/* Testimonial 5 */}
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-6 text-sm leading-relaxed">
-                &quot;They understand our industry and our unique challenges.
-                Their tailored solutions have proven highly effective.&quot;
-              </p>
-              <div className="flex items-center">
-                <img
-                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=david"
-                  alt="David Wilson"
-                  className="w-10 h-10 rounded-full mr-3"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900 text-sm">
-                    David Wilson
-                  </h4>
-                  <p className="text-gray-500 text-xs">CEO</p>
-                </div>
-              </div>
-            </div>
-
             {/* Testimonial 6 */}
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-6 text-sm leading-relaxed">
-                &quot;Their solutions have been instrumental in streamlining our
-                financial processes. Their solutions have saved us time and
-                money.&quot;
-              </p>
-              <div className="flex items-center">
-                <img
-                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=jennifer"
-                  alt="Jennifer Lee"
-                  className="w-10 h-10 rounded-full mr-3"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900 text-sm">
-                    Jennifer Lee
-                  </h4>
-                  <p className="text-gray-500 text-xs">Finance Manager</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -365,85 +306,69 @@ export default function Home() {
           {/* FAQ Accordion */}
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem
-              value="item-1"
-              className="bg-white rounded-lg mb-4 px-6 border-0"
-            >
-              <AccordionTrigger className="text-left font-semibold text-gray-900 hover:no-underline">
-                How do I set up my account?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 leading-relaxed">
-                To set up your account, download the app and follow the
-                on-screen instructions. You'll need to provide your personal
-                information, such as your name, email, and phone number, as well
-                as create a secure password.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem
-              value="item-2"
-              className="bg-white rounded-lg mb-4 px-6 border-0"
-            >
-              <AccordionTrigger className="text-left font-semibold text-gray-900 hover:no-underline">
-                What should I do if I forget my password?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 leading-relaxed">
-                If you forget your password, click on the &quot;Forgot
-                Password&quot; link on the login screen. You'll receive an email
-                with instructions to reset your password. Make sure to check
-                your spam folder if you don't see the email in your inbox.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem
-              value="item-3"
-              className="bg-white rounded-lg mb-4 px-6 border-0"
-            >
-              <AccordionTrigger className="text-left font-semibold text-gray-900 hover:no-underline">
-                Is my financial information secure?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 leading-relaxed">
-                Yes, we take security very seriously. We use bank-level
-                encryption to protect your data and employ multiple layers of
-                security including two-factor authentication. Your financial
-                information is never stored in plain text and is protected by
-                industry-standard security protocols.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem
-              value="item-4"
-              className="bg-white rounded-lg mb-4 px-6 border-0"
-            >
-              <AccordionTrigger className="text-left font-semibold text-gray-900 hover:no-underline">
-                Can I deposit checks using the app?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 leading-relaxed">
-                Yes, you can deposit checks directly through the app using
-                mobile check deposit. Simply take a photo of the front and back
-                of your check, enter the amount, and submit. Funds are typically
-                available within 1-2 business days.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem
               value="item-5"
               className="bg-white rounded-lg mb-4 px-6 border-0"
             >
               <AccordionTrigger className="text-left font-semibold text-gray-900 hover:no-underline">
-                How can I track my spending?
+                How do I upload my videos?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">
-                Our app automatically categorizes your transactions and provides
-                detailed spending insights. You can view your spending by
-                category, set budgets, and receive notifications when you're
-                approaching your limits. The dashboard gives you a comprehensive
-                overview of your financial habits.
+                You can record your session on any phone or device and upload
+                directly in the app.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem
+              value="item-6"
+              className="bg-white rounded-lg mb-4 px-6 border-0"
+            >
+              <AccordionTrigger className="text-left font-semibold text-gray-900 hover:no-underline">
+                What kind of feedback do I get?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed">
+                SwishAI gives you analysis on your shot mechanics, footwork,
+                balance, and more.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem
+              value="item-7"
+              className="bg-white rounded-lg mb-4 px-6 border-0"
+            >
+              <AccordionTrigger className="text-left font-semibold text-gray-900 hover:no-underline">
+                Do I need a coach or gym to use this?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed">
+                Nope. Train at home, on the street, or in a gym. SwishAI works
+                anywhere.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem
+              value="item-8"
+              className="bg-white rounded-lg mb-4 px-6 border-0"
+            >
+              <AccordionTrigger className="text-left font-semibold text-gray-900 hover:no-underline">
+                How fast is the feedback?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed">
+                Most breakdowns are returned in 1-3 minutes. Train, upload,
+                improve - fast.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem
+              value="item-9"
+              className="bg-white rounded-lg mb-4 px-6 border-0"
+            >
+              <AccordionTrigger className="text-left font-semibold text-gray-900 hover:no-underline">
+                Is my video and data private?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed">
+                Yes. We take privacy seriously. You control what gets uploaded.
+                None of your videos gets stored. They are deleted after you have
+                reviewed your feedback.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
         </div>
       </section>
-
       {/* Footer Section */}
       <footer className="bg-black text-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
@@ -459,8 +384,7 @@ export default function Home() {
                 <span className="font-bold text-xl">Swish AI</span>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Your trusted partner for personal finance management and
-                AI-powered financial insights.
+                Its like having a personal basketball coach in your pocket
               </p>
             </div>
 
@@ -470,7 +394,7 @@ export default function Home() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="/terms-and-conditions"
+                    href="https://www.swishai.app/terms-and-conditions"
                     className="text-gray-400 hover:text-white text-sm transition-colors"
                   >
                     Terms & Conditions
@@ -478,7 +402,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="/privacy-policy"
+                    href="https://www.swishai.app/privacy-policy"
                     className="text-gray-400 hover:text-white text-sm transition-colors"
                   >
                     Privacy Policy
