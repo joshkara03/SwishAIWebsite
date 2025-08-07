@@ -24,17 +24,28 @@ const HeroSection = ({
     setIsSubmitting(true);
     setMessage("");
 
+    // Debug logging
+    console.log("Supabase URL:", import.meta.env.VITE_SUPABASE_URL);
+    console.log(
+      "Supabase Key exists:",
+      !!import.meta.env.VITE_SUPABASE_ANON_KEY,
+    );
+
     try {
       const { error } = await supabase.from("waitlist").insert([{ email }]);
 
       if (error) {
-        setMessage("Error joining waitlist. Please try again.");
+        console.error("Supabase error:", error);
+        setMessage(`Error joining waitlist: ${error.message}`);
       } else {
         setMessage("Successfully joined the waitlist!");
         setEmail("");
       }
     } catch (error) {
-      setMessage("Error joining waitlist. Please try again.");
+      console.error("Catch error:", error);
+      setMessage(
+        `Error joining waitlist: ${error instanceof Error ? error.message : "Unknown error"}`,
+      );
     } finally {
       setIsSubmitting(false);
     }

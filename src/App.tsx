@@ -3,6 +3,7 @@ import { useRoutes, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndConditions";
+import EmailVerification from "./components/EmailVerification";
 import routes from "tempo-routes";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             path="/terms-and-conditions"
             element={<TermsAndConditions />}
           />
+          <Route path="/email-verification" element={<EmailVerification />} />
         </Routes>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </>
