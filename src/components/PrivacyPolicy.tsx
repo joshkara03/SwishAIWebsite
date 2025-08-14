@@ -39,116 +39,163 @@ export default function PrivacyPolicy() {
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
           <p className="text-sm text-gray-500 mb-8">
-            Effective Date: {new Date().toLocaleDateString()}
+            Effective Date: 2025-08-14
           </p>
 
           <p className="text-lg font-medium text-gray-900 mb-8">
-            We keep it simple: your data is yours. This policy explains what we
-            collect, how we use it, and what we don't do with it.
+            We keep data minimal and delete fast. This policy explains exactly
+            what we collect, how we use it, and how you control it.
           </p>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              1. What We Collect
+              1) What we collect
             </h2>
             <p className="mb-4">
-              <strong>Email Address</strong> – collected when you sign up.
+              <strong>Profile:</strong> age, email, player type, improvement
+              goals, training frequency.
             </p>
+            <p className="mb-4">
+              <strong>Purchases:</strong> subscription status and receipt
+              metadata via Apple/RevenueCat (to unlock features).
+            </p>
+            <p className="mb-4">
+              <strong>Identifier:</strong> an anonymous app user ID (no
+              username/password).
+            </p>
+            <p>No names, phone numbers, or cross-app tracking.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+              2) Videos & photos
+            </h2>
+            <p className="mb-4">We don't store your videos or photos.</p>
             <p>
-              That's it. No names, no phone numbers, no tracking across apps.
+              For analysis, your content is sent to our AI processing service
+              and discarded after the result is returned.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              2. Video Content
+              3) How we use data
             </h2>
-            <p className="mb-4">Your training videos stay on your device.</p>
             <p className="mb-4">
-              When you upload a video for analysis, it's temporarily passed
-              through our servers for processing. Once the analysis is complete,
-              the video is automatically deleted from our end.
+              Run the app, personalize tips, and improve your experience.
             </p>
-            <p>We do not store, review, or share your videos.</p>
+            <p className="mb-4">
+              Verify/restore subscriptions and manage access.
+            </p>
+            <p className="mb-4">Provide support and keep the service secure.</p>
+            <p>No ads. No data sales.</p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              3. How We Use Your Email
+              4) Who processes data for us
             </h2>
-            <p className="mb-4">We use your email to:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Let you log in</li>
+            <p className="mb-4">
+              We share data only with service providers that help us operate
+              Swish AI:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 mb-4">
+              <li>Apple / App Store – in-app purchases and receipts</li>
+              <li>RevenueCat – subscription management</li>
+              <li>Supabase – database for your profile</li>
+              <li>Expo services – app delivery/tooling</li>
               <li>
-                Send important account-related updates (e.g. password resets)
+                AI processing provider – generates form analysis from your
+                content
               </li>
-              <li>Share product announcements (you can opt out anytime)</li>
             </ul>
+            <p>
+              They act on our instructions and don't have permission to use your
+              data for their own marketing.
+            </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              4. Data Retention and Deletion
+              5) Subscriptions & billing
             </h2>
             <p className="mb-4">
-              You can delete your account at any time in the app settings.
+              Subscriptions are billed to your Apple ID via in-app purchase.
             </p>
             <p className="mb-4">
-              When you delete your account, we delete your email and all
-              associated data permanently.
+              We don't see or store your full payment details.
             </p>
-            <p>We retain no information after account deletion.</p>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              5. No Ads, No Tracking
-            </h2>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>We don't run ads.</li>
-              <li>We don't track your behavior.</li>
-              <li>We don't sell or share your data with third parties.</li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              6. Security
-            </h2>
             <p>
-              We use industry-standard practices to protect your data in transit
-              and at rest (for emails). Video data is encrypted during transfer
-              and deleted after processing.
+              Manage/cancel in Settings → [your name] → Subscriptions on your
+              device.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              7. Minors
-            </h2>
-            <p>
-              Swish AI is not intended for children under 13. If you are a
-              parent and believe your child has provided personal data, contact
-              us and we'll delete it.
-            </p>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              8. Changes to This Policy
-            </h2>
-            <p>
-              We may update this policy. If we do, we'll notify you via the app
-              or email. Continued use means you accept the new policy.
-            </p>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              9. Contact Us
+              6) Retention & deletion
             </h2>
             <p className="mb-4">
-              Questions? Concerns? Email us at{" "}
+              We keep your profile data until you delete it.
+            </p>
+            <p className="mb-4">
+              Use Settings → Delete account & data to permanently remove your
+              profile (including the 5-question survey and email).
+            </p>
+            <p className="mb-4">
+              After deletion, we do not retain your information.
+            </p>
+            <p>
+              Deleting your account does not cancel your Apple subscription.
+              Manage billing through Apple.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+              7) Security
+            </h2>
+            <p>
+              We use industry-standard protections (TLS in transit, restricted
+              access). No system is perfect, but we work to safeguard your data.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+              8) Children
+            </h2>
+            <p>
+              Swish AI isn't intended for children under 13. If a child's data
+              was submitted, contact us and we'll delete it.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+              9) Your rights & choices
+            </h2>
+            <p className="mb-4">Delete account & data in-app.</p>
+            <p className="mb-4">Access or correct your info by emailing us.</p>
+            <p>Opt out of emails: we don't send marketing emails.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+              10) Changes
+            </h2>
+            <p>
+              If we update this policy, we'll post the new date here and notify
+              in-app when appropriate.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+              11) Contact
+            </h2>
+            <p className="mb-4">
+              Questions or requests:{" "}
               <a
                 href="mailto:josh@scalifystudio.com"
                 className="text-blue-600 hover:underline"
@@ -156,6 +203,7 @@ export default function PrivacyPolicy() {
                 josh@scalifystudio.com
               </a>
             </p>
+            <p>Legal entity: Swish AI (Alberta, Canada)</p>
           </section>
         </div>
       </div>
